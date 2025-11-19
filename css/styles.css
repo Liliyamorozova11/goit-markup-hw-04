@@ -390,10 +390,11 @@ ul {
 
 .footer-container {
     
-    gap: 40px;
+
     align-items: baseline;
     display: flex;
 }
+.footer-main { margin-right: 120px;}
 
 .footer-web {
     color: #f4f4fd;
@@ -404,6 +405,15 @@ ul {
     margin-bottom: 16px;
 }
 
+.footer-socials-title {
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd
+    
+}
 .footer-text {
     color: #f4f4fd;
     font-size: 16px;
