@@ -392,6 +392,7 @@ ul {
     
     gap: 40px;
     align-items: baseline;
+    display: flex;
 }
 
 .footer-web {
