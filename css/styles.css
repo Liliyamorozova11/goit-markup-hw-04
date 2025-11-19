@@ -163,6 +163,7 @@ ul {
     border: none;
    display: block;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     .order-button:hover,
     .order-button:focus {
@@ -187,6 +188,7 @@ ul {
             align-items: center;
             justify-content: center;
              margin-bottom: 8px;
+            border: 1px solid #8e8f99;
         }
     .features .features-title{
         font-size: 20px;
@@ -209,6 +211,8 @@ ul {
         letter-spacing: 0.02em;
         color: #434455;}   
 
+
+
   .team { padding: 120px 0;
       background: #f4f4fd;
     
@@ -221,15 +225,20 @@ ul {
       font-size: 36px;
       line-height: 1.11;
      letter-spacing: 0.02em;
+    
       text-align: center;
       margin: 0 0 72px;
       text-transform: capitalize
+      
       }
 .team-item {
     background: #fff;
     border: 1px solid #e7e9fc;
     border-radius: 0 0 4px 4px;
-    flex: 0 1 calc((1158px - 24px * 3) / 4);}
+    flex: 0 1 calc((1158px - 24px * 3) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);}
  .team-card {
             padding: 32px 0;
          }
@@ -239,21 +248,50 @@ ul {
 }
 
 .team-name {
-      color: #2e2f42;
-      letter-spacing: 0.02em;
-      font-size: 20px;
-      line-height: 1.2;
-      margin: 32px 0 8px;
-    font-weight: 500;
-    text-align: center; 
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+     font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 8px;
-  }
+    font-weight: 500;
+    text-align: center;
+}
 .team-job {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     margin: 0;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.socials-item {
+    width: 40px;
+    height: 40px;
+}
+.socials-link { 
+    width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+         background-color: #4d5ae5;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f4f4fd;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.socials-link:hover, .socials-link:focus {
+    background-color: #404bbf;
+}
+.socials-icon {
+    display: block;
 }
 
 .portfolio {
